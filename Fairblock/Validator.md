@@ -19,6 +19,16 @@ sudo apt install git curl tar wget libssl-dev jq build-essential gcc make
 
 
 ```
+
+sudo add-apt-repository ppa:longsleep/golang-backports
+sudo apt update
+sudo apt install golang-go
+go version 
+
+```
+
+If go version is < v1.21, try the second method below else jump to step 4
+```
 sudo apt remove --autoremove golang-go; sudo apt install snapd; sudo snap install --classic --channel=1.21/stable go
 
 ```
@@ -101,6 +111,25 @@ fairyringd start
 ```
 
 
+## CREATE A VALIDATOR
+
+
+10. create wallet (change "Validator" to your name)
+
+```
+
+fairyringd keys add validator
+
+```
+
+
+<l1>
+You should fill the form below with your address generated (optional), this guide will be updated "if/when" more validators are onboarded <l1/>
+
+<p>
+https://airtable.com/app0TINSSRmghdhHk/pag2LwVPqaJxk2dKj/form
+   
+</p>
 
 
 
