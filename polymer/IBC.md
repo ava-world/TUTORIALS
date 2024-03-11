@@ -112,6 +112,10 @@ TENDERLY_TOKEN=''
 
 <l1/>
 
+
+after you can save using ctrl + x, then type "y", then enter.
+
+
 7. claim faucets with same wallet
 
 
