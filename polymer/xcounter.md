@@ -113,8 +113,7 @@ nano .env
 
 
 <l1>
-  
-a.   
+     
 PRIVATE_KEY_1='YOUR_METAMASK_PRIVATE_KEY'
  Add more if your project requires more private keys
 
@@ -138,7 +137,7 @@ after you can save using ctrl + x, then type "y", then enter.
 https://www.alchemy.com/faucets/base-sepolia
 
 
-9. send transaction 
+8. send transaction 
 
 ```
 just send-packet base
@@ -163,7 +162,7 @@ just sanity-check
 
 ```
 
-NB: if you get an error you need to start step9 again
+NB: if you get an error you need to start step 8 again
 
 
 
@@ -171,8 +170,12 @@ NB: if you get an error you need to start step9 again
 just send-packet optimism
 
 ```
-
-10. copy your transaction hash and check in https://sepolia.polymer.zone/packets
+<l1>
+take a screenshot of your first transaction incase you experience multiple transactions and copy the transaction hash as well
+  <l1/>
+    
+9.
+monitor your transaction here https://sepolia.polymer.zone/packets
 
 
 
