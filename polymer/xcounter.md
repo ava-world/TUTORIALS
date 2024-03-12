@@ -1,5 +1,5 @@
 
-## sending your first IBC PACKET on polymer testnet
+## Deploy a UNIVERSAL PACKET from OPTIMISM
 
 1. install git
 
