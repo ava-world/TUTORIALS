@@ -58,6 +58,18 @@ curl -L https://foundry.paradigm.xyz | bash
 source /root/.bashrc
 ```
 
+if using gitpod use this 
+
+```
+source/home/gitpod/.bashrc
+```
+
+
+next is
+
+
+
+
 ```
 foundryup
 ```
@@ -151,14 +163,24 @@ just sanity-check
 
 ```
 
+NB: if you get an error you need to start step9 again
+
+
+
 ```
 just send-packet optimism
 
 ```
 
-10. copy your transaction hash and check in sepolia.polymer.zone/packets.
+10. copy your transaction hash and check in https://sepolia.polymer.zone/packets
 
-ONLY SEND PROOF TO DISCORD AFTER YOUR TRANSACTION IS DELIVERED 
+
+
+YOUR CHANNEL ID MUST BE 16 OR 17, ONLY SEND PROOF TO DISCORD AFTER YOUR TRANSACTION IS "DELIVERED"
+
+
+
+<l1>I genuinely hope this will help you.<l1/>
 
 
   
