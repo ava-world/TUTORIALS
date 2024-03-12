@@ -61,7 +61,7 @@ source /root/.bashrc
 if using gitpod use this 
 
 ```
-source/home/gitpod/.bashrc
+source /home/gitpod/.bashrc
 ```
 
 
