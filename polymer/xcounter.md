@@ -89,9 +89,11 @@ cp .env.example .env
 
 
 <l1>
-EDIT .env file by imputing the right informations in the single quote ' '
+EDIT .env file by imputing the right informations, an editor like vscode makes it easier to edit, its optional to use an editor though.
   <l1/>
-  
+
+### IMPORTANT!!!!!
+You are only making changes to line 2, 6, 7, 8,9. DO NOT COPY MINE JUST USE THE LINKS I PROVIDED TO GET YOUR KEYS AND EDIT THEM IN THE .env file
 
 ```
 nano .env
@@ -100,25 +102,18 @@ nano .env
 
 <l1>
   
-a.   Make sure to rename this file to .env before adding your private keys!!!
-PRIVATE_KEY_1=' <your EVM wallet private key>'
+a.   
+PRIVATE_KEY_1='YOUR_METAMASK_PRIVATE_KEY'
  Add more if your project requires more private keys
 
  API keys for developer tooling and infra
-OP_ALCHEMY_API_KEY=' <op sepolia api from alchemy>' link: https://docs.alchemy.com/docs/alchemy-quickstart-guide
-BASE_ALCHEMY_API_KEY=' <base sepolia api from alchemy>' link: https://docs.alchemy.com/docs/alchemy-quickstart-guide
-OP_BLOCKSCOUT_API_KEY=' <blockscout optimism api>' link: https://optimism-sepolia.blockscout.com/account/api-key
-BASE_BLOCKSCOUT_API_KEY=' <blockscout base api>'  link: https://base-sepolia.blockscout.com/account/api-key
+OP_ALCHEMY_API_KEY='YOUR_ALCHEMY_OP_SEPOLIA_API_KEY' link: https://docs.alchemy.com/docs/alchemy-quickstart-guide
+BASE_ALCHEMY_API_KEY='YOUR_ALCHEMY_BASE_SEPOLIA_API_KEY' link: https://docs.alchemy.com/docs/alchemy-quickstart-guide
+OP_BLOCKSCOUT_API_KEY='YOUR_OP_BLOCKSCOUT_API_KEY' link: https://optimism-sepolia.blockscout.com/account/api-key
+BASE_BLOCKSCOUT_API_KEY='YOUR_ALCHEMY_BASE_SEPOLIA_API_KEY'  link: https://base-sepolia.blockscout.com/account/api-key
 TENDERLY_TOKEN=''
 
 <l1/>
-
-b. scroll down in your .env file and add this to this after the last line
-
-```
-# .env file
-CONFIG_PATH='config/alt-config.json'
-```
 
 
 after you can save using ctrl + x, then type "y", then enter.
@@ -134,9 +129,36 @@ https://www.alchemy.com/faucets/base-sepolia
 9. send transaction 
 
 ```
-just send-packet optimism
+just send-packet base
+
 ```
 
+```
+just set-contracts optimism XCounterUC true
+```
+
+```
+just switch-client
+```
+
+```
+just deploy optimism base
+
+```
+
+```
+just sanity-check
+
+```
+
+```
+just send-packet optimism
+
+```
+
+10. copy your transaction hash and check in sepolia.polymer.zone/packets.
+
+ONLY SEND PROOF TO DISCORD AFTER YOUR TRANSACTION IS DELIVERED 
 
 
   
