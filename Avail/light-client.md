@@ -40,6 +40,8 @@ curl -sL1 avail.sh | bash
 6. copy public key
 
 
+<img scr="https://raw.githubusercontent.com/ava-world/TUTORIALS/main/Images/IMG_20240403_012822.jpg" /> 
+
 
 if you have difficulty copying because of logs, you can stop and restart 
 
