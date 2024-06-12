@@ -1,10 +1,6 @@
 ## sample 1
 
 
-
-
-
-
 ```
 
 #![no_std]
@@ -49,3 +45,58 @@ fn main() {
 
 ```
 
+## sample 2
+
+
+```
+
+#![no_std]
+#![no_main]
+
+extern crate core;
+
+use core::panic::PanicInfo;
+
+/// Computes the greatest common divisor (GCD) of two numbers using Euclid's algorithm.
+///
+/// # Arguments
+///
+/// * `a` - First number.
+/// * `b` - Second number.
+///
+/// # Returns
+///
+/// * The GCD of `a` and `b`.
+fn gcd(mut a: u32, mut b: u32) -> u32 {
+    while b != 0 {
+        let t = b;
+        b = a % b;
+        a = t;
+    }
+    a
+}
+
+// Mock function to represent output in a `no_std` environment.
+fn print_result(result: u32) {
+    // In a real `no_std` environment, this might write to a serial port or display.
+    // Here we just define it for conceptual completeness.
+    // Example: write to memory-mapped I/O address or use platform-specific mechanisms.
+    unsafe {
+        let output_ptr = 0x1000 as *mut u32;
+        *output_ptr = result;
+    }
+}
+
+// Entry point
+#[nexus_rt::main]
+fn main() {
+    let a = 56;
+    let b = 98;
+    let result = gcd(a, b);
+    print_result(result);
+    // Check the result for demonstration purposes (GCD of 56 and 98 is 14)
+    assert_eq!(result, 14);
+}
+
+
+```
